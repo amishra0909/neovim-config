@@ -35,4 +35,5 @@ opt.clipboard:append("unnamedplus")
 opt.splitright = true
 opt.splitbelow = true
 
+-- '-' is treated as part of the word.
 opt.iskeyword:append("-")
