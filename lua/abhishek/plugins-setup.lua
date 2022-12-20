@@ -86,6 +86,18 @@ return packer.startup(function(use)
     use("saadparwaiz1/cmp_luasnip") -- show lua snippets for auto completion
     use("rafamadriz/friendly-snippets") -- friendly sets of snippets
 
+    -- managing and installing lsp servers
+    -- primary source of truth for managing and isntall lsp servers. LSP is built into Neovim but LSP servers need to be installed.
+    use("williamboman/mason.nvim")
+    use("williamboman/mason-lspconfig.nvim") -- help us bridge gap between mason and nvim lsp config
+
+    -- configuring lsp servers
+    use("neovim/nvim-lspconfig")
+    use("hrsh7th/cmp-nvim-lsp") -- will allow us to configure lsp configure so that they appear in auto completion
+    use({ "glepnir/lspsaga.nvim", branch = "main" }) -- enhanced ui to lsp experience 
+    use("jose-elias-alvarez/typescript.nvim") -- add further functionality to typescript server
+    use("onsails/lspkind.nvim") -- vscode like icons to auto completion window
+
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if packer_bootstrap then
