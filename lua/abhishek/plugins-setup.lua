@@ -49,6 +49,8 @@ return packer.startup(function(use)
 
     use("bluz71/vim-nightfly-guicolors") -- preferred color scheme. This is literally a git repo which has the theme.
 
+    use("christoomey/vim-tmux-navigator") -- tmux and split window navigation, use ctrl h,j,k,l to move between splits
+
     use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
     use("szw/vim-maximizer") -- maximizes and restores current window
