@@ -55,10 +55,25 @@ return packer.startup(function(use)
 
     use("szw/vim-maximizer") -- maximizes and restores current window
 
+    -- essential plugins
+    use("tpope/vim-surround")
+    use("vim-scripts/ReplaceWithRegister")
+
+    -- commenting with GC
+    use("numToStr/Comment.nvim")
+
+    -- file explorer
+    use("nvim-tree/nvim-tree.lua")
+
+    -- icons
+    use("kyazdani42/nvim-web-devicons")
+
+    -- status line
+    use("nvim-lualine/lualine.nvim")
+
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if packer_bootstrap then
         require("packer").sync()
     end
 end)
-
