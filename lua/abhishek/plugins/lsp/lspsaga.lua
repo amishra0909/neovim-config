@@ -3,7 +3,7 @@ if not saga_status then
     return
 end
 
-saga.setup({
+saga.init_lsp_saga({
     move_in_saga = {
         prev = "<C-k>",
         next = "<C-j>" 

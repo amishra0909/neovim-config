@@ -16,7 +16,7 @@ mason_lspconfig.setup({
         "html",
         "cssls",
         "tailwindcss",
-        "lua_ls",
+        "sumneko_lua",
         "jdtls",
         "groovyls",
         "quick_lint_js",
