@@ -37,3 +37,6 @@ opt.splitbelow = true
 
 -- '-' is treated as part of the word.
 opt.iskeyword:append("-")
+
+-- scroll when 10 lines are left
+opt.scrolloff = 10
