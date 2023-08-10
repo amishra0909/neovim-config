@@ -44,7 +44,7 @@ packer.init({
 
 -- the plugin goes here
 return packer.startup(function(use)
-    
+
     use("wbthomason/packer.nvim") -- packer can manage itself, so this is packer
 
     use("bluz71/vim-nightfly-guicolors") -- preferred color scheme. This is literally a git repo which has the theme.
